@@ -6,7 +6,7 @@
 </template>
 
 <script>
-export default class MainApp{};
+export default {};
 </script>
 
 <style lang="scss">

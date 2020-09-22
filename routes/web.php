@@ -13,4 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any}', 'SpaController@index')->where('any', '.*');
+//Route::get('/{any}', 'RouteController@index')->where('any', '.*');
+
+Route::get('/', function () {
+    return view('spa');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
