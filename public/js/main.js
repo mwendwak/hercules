@@ -16794,7 +16794,7 @@ if(false) {}
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
-  * vue-router v3.4.3
+  * vue-router v3.4.4
   * (c) 2020 Evan You
   * @license MIT
   */
@@ -18701,6 +18701,7 @@ function runQueue (queue, fn, cb) {
   step(0);
 }
 
+// When changing thing, also edit router.d.ts
 var NavigationFailureType = {
   redirected: 2,
   aborted: 4,
@@ -18989,6 +18990,7 @@ History.prototype.confirmTransition = function confirmTransition (route, onCompl
     var this$1 = this;
 
   var current = this.current;
+  this.pending = route;
   var abort = function (err) {
     // changed after adding errors with
     // https://github.com/vuejs/vue-router/pull/3047 before that change,
@@ -19038,7 +19040,6 @@ History.prototype.confirmTransition = function confirmTransition (route, onCompl
     resolveAsyncComponents(activated)
   );
 
-  this.pending = route;
   var iterator = function (hook, next) {
     if (this$1.pending !== route) {
       return abort(createNavigationCancelledError(current, route))
@@ -19107,11 +19108,18 @@ History.prototype.setupListeners = function setupListeners () {
   // Default implementation is empty
 };
 
-History.prototype.teardownListeners = function teardownListeners () {
+History.prototype.teardown = function teardown () {
+  // clean up event listeners
+  // https://github.com/vuejs/vue-router/issues/2341
   this.listeners.forEach(function (cleanupListener) {
     cleanupListener();
   });
   this.listeners = [];
+
+  // reset current history route
+  // https://github.com/vuejs/vue-router/issues/3294
+  this.current = START;
+  this.pending = null;
 };
 
 function normalizeBase (base) {
@@ -19575,8 +19583,12 @@ var AbstractHistory = /*@__PURE__*/(function (History) {
     this.confirmTransition(
       route,
       function () {
+        var prev = this$1.current;
         this$1.index = targetIndex;
         this$1.updateRoute(route);
+        this$1.router.afterHooks.forEach(function (hook) {
+          hook && hook(route, prev);
+        });
       },
       function (err) {
         if (isNavigationFailure(err, NavigationFailureType.duplicated)) {
@@ -19671,11 +19683,7 @@ VueRouter.prototype.init = function init (app /* Vue component instance */) {
     // we do not release the router so it can be reused
     if (this$1.app === app) { this$1.app = this$1.apps[0] || null; }
 
-    if (!this$1.app) {
-      // clean up event listeners
-      // https://github.com/vuejs/vue-router/issues/2341
-      this$1.history.teardownListeners();
-    }
+    if (!this$1.app) { this$1.history.teardown(); }
   });
 
   // main app previously initialized
@@ -19837,7 +19845,7 @@ function createHref (base, fullPath, mode) {
 }
 
 VueRouter.install = install;
-VueRouter.version = '3.4.3';
+VueRouter.version = '3.4.4';
 VueRouter.isNavigationFailure = isNavigationFailure;
 VueRouter.NavigationFailureType = NavigationFailureType;
 
@@ -33318,6 +33326,9 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   router: _router_index__WEBPACK_IMPORTED_MODULE_2__["default"],
   render: function render(h) {
     return h(_App__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  },
+  created: function created() {
+    console.log(_plugins_paperDashboard__WEBPACK_IMPORTED_MODULE_3__["default"]);
   }
 }).$mount("#app");
 
@@ -34225,11 +34236,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/assets/css/themify-icons.css */ "./resources/js/assets/css/themify-icons.css");
 /* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_SidebarPlugin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/SidebarPlugin */ "./resources/js/components/SidebarPlugin/index.js");
 
 
 
 
  //css assets
+
 
 
 

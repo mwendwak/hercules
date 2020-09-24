@@ -1,5 +1,5 @@
 import Notify from "vue-notifyjs";
-import SideBar from "@/arssets/components/SidebarPlugin/SideBar";
+import SideBar from "@/components/SidebarPlugin/SideBar";
 
 import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
@@ -9,6 +9,7 @@ import "es6-promise/auto";
 import "bootstrap/dist/css/bootstrap.css";
 import "@/assets/sass/paper-dashboard.scss";
 import "@/assets/css/themify-icons.css";
+import SidebarPlugin from "../components/SidebarPlugin";
 
 export default {
   install(Vue) {
