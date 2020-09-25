@@ -34225,18 +34225,19 @@ var GlobalDirectives = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_notifyjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-notifyjs */ "./node_modules/vue-notifyjs/dist/vue-notifyjs.common.js");
 /* harmony import */ var vue_notifyjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_notifyjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_SidebarPlugin_SideBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/SidebarPlugin/SideBar */ "./resources/js/components/SidebarPlugin/SideBar.vue");
-/* harmony import */ var _globalComponents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./globalComponents */ "./resources/js/plugins/globalComponents.js");
-/* harmony import */ var _globalDirectives__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./globalDirectives */ "./resources/js/plugins/globalDirectives.js");
-/* harmony import */ var es6_promise_auto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! es6-promise/auto */ "./node_modules/es6-promise/auto.js");
-/* harmony import */ var es6_promise_auto__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(es6_promise_auto__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/assets/sass/paper-dashboard.scss */ "./resources/js/assets/sass/paper-dashboard.scss");
-/* harmony import */ var _assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/assets/css/themify-icons.css */ "./resources/js/assets/css/themify-icons.css");
-/* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_SidebarPlugin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/SidebarPlugin */ "./resources/js/components/SidebarPlugin/index.js");
+/* harmony import */ var _components_SidebarPlugin_SideBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SidebarPlugin/SideBar */ "./resources/js/components/SidebarPlugin/SideBar.vue");
+/* harmony import */ var _components_SidebarPlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SidebarPlugin */ "./resources/js/components/SidebarPlugin/index.js");
+/* harmony import */ var _globalComponents__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./globalComponents */ "./resources/js/plugins/globalComponents.js");
+/* harmony import */ var _globalDirectives__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./globalDirectives */ "./resources/js/plugins/globalDirectives.js");
+/* harmony import */ var es6_promise_auto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! es6-promise/auto */ "./node_modules/es6-promise/auto.js");
+/* harmony import */ var es6_promise_auto__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(es6_promise_auto__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/assets/sass/paper-dashboard.scss */ "./resources/js/assets/sass/paper-dashboard.scss");
+/* harmony import */ var _assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_paper_dashboard_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/assets/css/themify-icons.css */ "./resources/js/assets/css/themify-icons.css");
+/* harmony import */ var _assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_css_themify_icons_css__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -34246,12 +34247,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   install: function install(Vue) {
-    Vue.use(_globalComponents__WEBPACK_IMPORTED_MODULE_2__["default"]);
-    Vue.use(_globalDirectives__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    Vue.use(_globalComponents__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    Vue.use(_globalDirectives__WEBPACK_IMPORTED_MODULE_4__["default"]);
     Vue.use(_components_SidebarPlugin_SideBar__WEBPACK_IMPORTED_MODULE_1__["default"]);
+    Vue.use(_components_SidebarPlugin__WEBPACK_IMPORTED_MODULE_2__["default"]);
     Vue.use(vue_notifyjs__WEBPACK_IMPORTED_MODULE_0___default.a);
   }
 });
