@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c6fa29d-0ce7-49a8-b13d-63b9d09b3304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/Calendar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/Configs.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/plugins/paperDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/plugins/paperDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/layout/dashboard/DashboardLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layout/dashboard/DashboardLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +163,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoreUI-LaravelVueAdmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -173,6 +175,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Teezy\hercules\resources\js\pages" />
       <recent name="D:\Projects\Teezy\hercules\resources\js\assets\sass" />
     </key>
   </component>
@@ -191,7 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600275132422</updated>
       <workItem from="1600275136407" duration="17853000" />
-      <workItem from="1600796596932" duration="12957000" />
+      <workItem from="1600796596932" duration="14368000" />
+      <workItem from="1601106388181" duration="4062000" />
     </task>
     <servers />
   </component>
@@ -242,9 +246,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600409999317" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600798467247">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1434" y="-197" width="945" height="969" key="search.everywhere.popup" timestamp="1601114417369">
+      <screen x="-1920" y="-267" width="1920" height="1040" />
     </state>
+    <state x="-1434" y="-197" width="945" height="969" key="search.everywhere.popup/0.0.1366.728/-1920.-267.1920.1040@-1920.-267.1920.1040" timestamp="1601114417369" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600798467247" />
   </component>
   <component name="XDebuggerManager">
@@ -253,7 +258,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/plugins/paperDashboard.js</url>
           <line>9</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
